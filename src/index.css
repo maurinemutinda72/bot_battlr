@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;700&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #ffcc00;
+  text-shadow: 3px 3px 10px rgba(255, 204, 0, 0.8);
+}
+
+h2 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #ff6600;
+  text-shadow: 2px 2px 8px rgba(255, 102, 0, 0.7);
+}
+
+.bot-collection, .your-bot-army {
+  padding: 20px;
+  margin: 20px auto;
+  width: 90%;
+  max-width: 1200px;
+  border-radius: 15px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+  animation: fadeIn 1s ease-in-out;
+}
+
+.bot-collection {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.your-bot-army {
+  background: rgba(20, 20, 20, 0.8);
+}
+
+.bot-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.bot-card {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  border-radius: 10px;
+  width: 220px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden; 
+}
+.bot-stats {
+  display: flex;
+  justify-content: space-between; 
+  width: 100%;
+  margin: 8px 0;
+  padding: 5px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+}
+
+.stat-value {
+  font-family: monospace; 
+  font-size: 14px;
+  min-width: 60px; 
+  text-align: center;
+  white-space: nowrap; 
+  overflow: hidden; 
+  text-overflow: ellipsis; 
+}
+.bot-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  white-space: nowrap; 
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+
+.bot-class {
+  font-size: 0.9rem;
+  color: #ddd;
+}
+
+.bot-phrase {
+  font-size: 0.9rem;
+  font-style: italic;
+  color: #bbb;
+  margin: 8px 0;
+  padding: 5px;
+  max-width: 90%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.bot-card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.bot-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 0px 15px rgba(255, 204, 0, 0.7);
+}
+
+button {
+  border: none;
+  padding: 10px 15px;
+  margin: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s ease-in-out, transform 0.2s;
+}
+
+button:hover {
+  transform: translateY(-2px);
+}
+
+button.add-to-army {
+  background: #007bff;
+  color: white;
+}
+
+button.add-to-army:hover {
+  background: #0056b3;
+}
+
+button.delete-bot {
+  background: #ff4444;
+  color: white;
+}
+
+button.delete-bot:hover {
+  background: #cc0000;
+}
+
+.sort-buttons button {
+  background: #ffcc00;
+  color: black;
+}
+
+.sort-buttons button:hover {
+  background: #e6b800;
+}
+
+
+.filter-buttons button {
+  background: #00cc99;
+  color: white;
+}
+
+.filter-buttons button:hover {
+  background: #009973;
+}
+
+
+button.reset {
+  background: #ff6600;
+  color: white;
+}
+
+button.reset:hover {
+  background: #cc5200;
+}
+
+input {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  width: 250px;
+  margin: 10px;
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
