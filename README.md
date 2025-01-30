@@ -2,7 +2,8 @@
 
 Welcome to Bot Battlr, the ultimate galactic web app where users can browse, view, and enlist powerful bots into their custom Bot Army.  
 
-This project is built using React and follows best practices in component-based architecture, state management, event handling, and data fetching from a local JSON server.  
+This project is built using React and follows best practices in component-based architecture, state management, event handling, and data fetching from a local JSON server.  use this to access the app https://vercel.com/maurinemutinda72s-projects/bot-battlr
+
 
 ### Features  
 
